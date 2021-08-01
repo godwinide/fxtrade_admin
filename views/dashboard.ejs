@@ -1,0 +1,38 @@
+<div class="container mx-auto p-5 mt-5">
+    <h1>Users</h1>
+</div>
+<div class="scrollable">
+    <table class="table table-borderless table-striped table-earning">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Balance</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% users.forEach(user => {%>
+                <tr>
+                    <td><%= user.fullname %></td>
+                    <td><%= user.balance %></td>
+                    <td><%= user.phone %></td>
+                    <td><%= user.email %></td>
+                    <td>
+                        <a href="/users/edit/<%=user._id%>" class="btn btn-info">
+                            <i class="fas fa-pen"></i>
+                            Edit
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/users/delete/<%=user._id%>">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            <%})%>
+        </tbody>
+    </table>
+</div>

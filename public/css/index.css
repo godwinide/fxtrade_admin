@@ -1,0 +1,408 @@
+body {
+  font-size: 16px !important;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden !important;
+}
+
+.title {
+  font-size: 1.5em;
+  text-align: center !important;
+}
+
+.short {
+  height: 100vh !important;
+}
+
+.title .green {
+  color: green !important;
+}
+.title .red {
+  color: red !important;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8000px;
+  width: 100%;
+  z-index: -1;
+}
+
+.p-short {
+  height: 2000px !important;
+}
+
+.c-img {
+  width: 100% !important;
+}
+
+.fixed-nav {
+  position: fixed;
+  z-index: 20;
+  width: 100vw;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.89) !important;
+}
+
+.fixed-nav * {
+  color: white !important;
+}
+
+.fixed-nav button > * {
+  color: #fff !important;
+}
+
+.topM {
+  margin-top: 10em;
+}
+
+.dropdown-menu a:hover {
+  background-color: #000 !important;
+}
+
+.showcase {
+  min-height: 80vh;
+  width: 100%;
+}
+
+.showcase * {
+  color: white !important;
+}
+
+.showcase h1 {
+  font-weight: bolder;
+  font-size: 4em;
+}
+
+.showcase h2 {
+  font-weight: bold;
+  margin-top: 2em;
+  font-size: 3em;
+}
+
+.showcase h3 {
+  font-size: 1.7em;
+  margin-top: 1.5em;
+}
+
+.one {
+  background-image: url(/images/boxes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0.3em;
+}
+
+.one1 {
+  background-image: url(/images/boxes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.one1 * {
+  color: white !important;
+}
+
+.one1 h1 {
+  font-size: 3.5em;
+}
+.one1 h3 {
+  font-size: 2em;
+}
+
+.two {
+  background-image: url(/images/driving.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.3em;
+}
+
+.table1-stats {
+  justify-content: space-between !important;
+}
+
+.table1-stats h2 {
+  font-size: 3em;
+  line-height: 1.3em;
+}
+
+.table1-stats h3 {
+  font-size: 2em;
+  line-height: 1.3em;
+  margin: 1.5em 0;
+}
+
+.table1-stats a {
+  font-size: 1.2em;
+}
+
+.table1-stats table * {
+  font-size: 1.1em;
+  padding: 0.5em;
+}
+
+.table1-stats table td {
+  background-color: rgb(250, 249, 249);
+  margin-right: 1em !important;
+}
+
+.table1-stats table th {
+  color: rgb(126, 126, 126);
+}
+
+.table1-stats img {
+  width: 2em;
+  height: 2em;
+}
+
+.ts-wrap {
+  padding: 20px;
+  box-shadow: 3px 5px 10px rgb(70, 70, 70);
+  border-radius: 20px;
+}
+
+.where-to {
+  padding: 3em;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(30, 33, 39);
+  font-size: 1.4em;
+}
+
+.where-to .row {
+  justify-content: space-between;
+}
+
+.where-to .coll {
+  background-color: rgb(16, 21, 32);
+  padding: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  width: 24%;
+}
+
+.where-to video {
+  width: 100%;
+}
+
+.testimonial {
+  padding: 5em;
+  justify-content: center;
+  text-align: center;
+  font-size: 1em;
+}
+
+.trade {
+  padding: 5em;
+  justify-content: center;
+  font-size: 1em;
+}
+
+.trade h3,
+.trade h4 {
+  font-weight: bolder;
+}
+
+.testimonial * {
+  color: rgb(255, 255, 255) !important;
+}
+
+.testimonial h2 {
+  color: rgb(255, 255, 255) !important;
+  font-weight: bolder;
+}
+
+.testimonial img {
+  color: #fff;
+}
+
+.testimonial .row {
+  justify-content: space-between;
+}
+
+.testimonial .coll {
+  padding: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  width: 22%;
+  margin-bottom: 1em;
+  box-shadow: 3px 4px 7px rgba(49, 49, 49, 0.589);
+}
+
+.testimonial img {
+  margin: 1em 0;
+}
+
+.profit {
+  padding: 5em;
+  justify-content: space-between;
+  font-size: 1em;
+  background-image: url(/images/profit.jpg);
+}
+
+.profit > * {
+  color: #fff !important;
+}
+
+.profit .coll {
+  justify-content: center;
+  text-align: center;
+}
+
+.profit .coll:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.801);
+  padding: 3em;
+  border-radius: 20px;
+}
+
+.profit .s-btw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 4em;
+}
+
+.open-free {
+  padding: 5em;
+  color: #fff !important;
+}
+
+.footer {
+  padding: 2em;
+  background-color: rgb(6, 8, 20);
+  color: rgb(231, 231, 231);
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.iframe {
+  max-width: 100vw !important;
+}
+
+.login-wrap {
+  padding-top: 15em;
+}
+
+.login-wrap .login {
+  margin: 2em auto;
+  padding: 4em;
+  border-radius: 20px;
+  max-width: 800px;
+  background-color: rgba(4, 20, 36, 0.87);
+}
+
+.login-wrap .login input {
+  height: 2em;
+  font-size: 1.3em;
+  color: rgb(0, 0, 0) !important;
+}
+
+.login button {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.asset-col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  box-shadow: 2px 2px 10px rgba(49, 49, 49, 0.589);
+  margin-top: 1em;
+}
+
+.asset-col img {
+  width: 2, 5em;
+  height: 2.5em;
+}
+
+#asset-list {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 1.2em !important;
+  }
+  h2 {
+    font-size: 1em !important;
+  }
+  h3,
+  h4 {
+    font-size: 1em !important;
+  }
+  a {
+    font-size: 1em !important;
+    margin-bottom: 0.5em;
+  }
+  span {
+    font-size: 1em !important;
+  }
+  table > * {
+    font-size: 1em !important;
+  }
+  .showcase {
+    min-height: 50vh;
+  }
+  .showcase h1 {
+    font-size: 1.4em;
+  }
+  .showcase h2 {
+    font-size: 1.2em;
+  }
+  .showcase h3 {
+    font-size: 1em;
+  }
+  .topM {
+    margin-top: 5em;
+  }
+  .full {
+    width: 100vw !important;
+  }
+  .coll {
+    width: 100% !important;
+  }
+  .mx-5 {
+    margin: 0 !important;
+  }
+  .where-to {
+    padding: 0.4em;
+    background-color: #000;
+    width: 100%;
+  }
+  .testimonial {
+    padding: 1em;
+  }
+  .trade {
+    padding: 1em;
+  }
+  .profit {
+    padding: 1em;
+  }
+  .open-free {
+    padding: 1em;
+  }
+
+  #particles-js {
+    height: 8000px;
+  }
+  .p-short {
+    height: 3000px !important;
+  }
+}

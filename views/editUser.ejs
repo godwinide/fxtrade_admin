@@ -1,0 +1,84 @@
+<div class="container mx-auto p-5 mt-5">
+
+</div>
+<div class="form-wrap mx-2">
+    <div class="card">
+        <div class="card-header">
+            <strong>Edit User</strong>
+        </div>
+        <div class="card-body card-block">
+            <form method="POST" class="form-horizontal" action="/users/edit">
+                <%-include("./partials/messages") %>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="hf-name" class=" form-control-label">Full name</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input value="<%=typeof user.fullname !== 'undefined' ? user.fullname:''%>" type="name" id="hf-name" name="fullname" placeholder="Enter full name..." class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="hf-name" class=" form-control-label">Phone</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input value="<%=typeof user.phone !== 'undefined' ? user.phone:''%>" type="tel" name="phone" placeholder="Enter phone number..." class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="hf-name" class=" form-control-label">Email</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input value="<%=typeof user.email !== 'undefined' ? user.email:''%>" type="email" name="email" placeholder="Enter phone number" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="hf-name" class=" form-control-label">Username</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input value="<%=typeof user.username !== 'undefined' ? user.username:''%>" type="username" name="username" placeholder="Enter username..." class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="hf-name" class=" form-control-label">Balance</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input value="<%=typeof user.balance !== 'undefined' ? user.balance:''%>" type="balance" name="balance" placeholder="Enter balance..." class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="hf-name" class=" form-control-label">Deposit</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input value="<%=typeof user.deposit !== 'undefined' ? user.deposit:''%>" type="deposit" name="deposit" placeholder="Enter deposit..." class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="hf-name" class=" form-control-label">Last Deposit</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input value="<%=typeof user.last_balance !== 'undefined' ? user.last_balance:''%>" type="last_balance" name="last_balance" placeholder="Enter last deposit..." class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="hf-name" class=" form-control-label">Last Withdrawer</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input value="<%=typeof user.withdrawer !== 'undefined' ? user.withdrawer:''%>" type="withdrawer" name="withdrawer" placeholder="Enter last_balance..." class="form-control">
+                    </div>
+                </div>
+                <input type="hidden" name="id" value="<%=user.id%>"/>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        <i class="fa fa-dot-circle-o"></i> update
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>

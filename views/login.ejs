@@ -1,0 +1,22 @@
+<div id="particles-js" class="short"></div>
+<div class="login-wrap">
+    <div class="login">
+        <h1 class="my-4 text-white">LOGIN</h1>
+        <form method="POST">
+            <%-include("./partials/messages") %>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label text-white">Email address: </label>
+                <input type="username" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label text-white">Password: </label>
+                <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button style="width: 100%;" type="submit" class="btn btn-primary">Login</button>
+            <p class="text-white mt-3"
+            style="font-size: 1.2em;"
+            >Don't have an account? 
+                <a href="/register" style="text-decoration: none; font-weight: bold;">signup</a></p>
+            </form>
+    </div>
+</div>
