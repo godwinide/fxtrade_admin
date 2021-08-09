@@ -23,7 +23,6 @@ router.get("/edit/:id", ensureAuthenticated, async (req, res) => {
         if(!user){
             return res.redirect("/")
         }
-        console.log(user);
         return res.render("editUser", {user});
     }catch(err){
         return res.redirect("/");

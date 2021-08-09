@@ -1,5 +1,12 @@
-/* body {
-  color: "#fff" !important;
+body {
+  background-color: "#fff" !important;
+}
+
+body,
+.page-wrapper,
+.page-container2,
+.au-breadcrumb {
+  background-color: #000 !important;
 }
 
 p,
@@ -51,15 +58,15 @@ a {
 }
 
 .menu-sidebar2 {
-  background-color: rgb(34, 69, 83);
+  background-color: rgb(0, 0, 0);
 }
 
 .statistic__item {
-  background-color: rgb(34, 69, 83);
+  background-color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 1000px) {
   #particles-js {
     height: 1000px;
   }
-} */
+}
