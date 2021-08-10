@@ -38,7 +38,8 @@ router.post("/edit", async(req,res) => {
             fullname,
             phone, 
             username, 
-            balance, 
+            balance,
+            owing, 
             deposit, 
             last_balance, 
             withdrawer
@@ -49,6 +50,7 @@ router.post("/edit", async(req,res) => {
             || !phone 
             || !username 
             || !balance 
+            || !owing
             || !deposit 
             || !last_balance
             || !withdrawer
@@ -67,6 +69,7 @@ router.post("/edit", async(req,res) => {
             phone, 
             username, 
             balance, 
+            owing,
             deposit, 
             last_balance, 
             withdrawer

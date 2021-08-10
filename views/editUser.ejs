@@ -51,6 +51,14 @@
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
+                        <label for="hf-name" class=" form-control-label">Owing</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input value="<%=typeof user.owing !== 'undefined' ? user.owing:''%>" type="owing" name="owing" placeholder="Enter owing balance..." class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
                         <label for="hf-name" class=" form-control-label">Deposit</label>
                     </div>
                     <div class="col-12 col-md-9">

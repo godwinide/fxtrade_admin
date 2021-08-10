@@ -31,6 +31,11 @@ const UserSchema = new Schema({
         required: false,
         default: 0
     },
+    owing:{
+        type: Number,
+        required: false,
+        default: 0
+    },
     last_balance:{
         type: Number,
         required: false,
